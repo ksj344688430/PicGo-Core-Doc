@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PicGo-Core-Doc 贡献指南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.7ed2c533.css" as="style"><link rel="preload" href="/assets/js/app.75368c75.js" as="script"><link rel="preload" href="/assets/js/2.d9775bb3.js" as="script"><link rel="preload" href="/assets/js/7.029c8c53.js" as="script"><link rel="prefetch" href="/assets/js/10.941eb833.js"><link rel="prefetch" href="/assets/js/11.28fd37a4.js"><link rel="prefetch" href="/assets/js/12.9ed44bb1.js"><link rel="prefetch" href="/assets/js/13.5c3f7468.js"><link rel="prefetch" href="/assets/js/14.95ccd214.js"><link rel="prefetch" href="/assets/js/15.a971e9ed.js"><link rel="prefetch" href="/assets/js/16.555ca7d4.js"><link rel="prefetch" href="/assets/js/17.fef4b654.js"><link rel="prefetch" href="/assets/js/18.0d520fb2.js"><link rel="prefetch" href="/assets/js/19.76a64e27.js"><link rel="prefetch" href="/assets/js/3.d96f24cd.js"><link rel="prefetch" href="/assets/js/4.b1a4afe5.js"><link rel="prefetch" href="/assets/js/5.79be2b59.js"><link rel="prefetch" href="/assets/js/6.0e17b22a.js"><link rel="prefetch" href="/assets/js/8.37e9996c.js"><link rel="prefetch" href="/assets/js/9.3db08c64.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7ed2c533.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="picgo-core-doc-贡献指南"><a href="#picgo-core-doc-贡献指南" class="header-anchor">#</a> PicGo-Core-Doc 贡献指南</h1> <p>感谢你想为 PicGo-Core-Doc 做贡献！在提交你的贡献之前，请注意查看如下的指导手册~</p> <h2 id="前置工作"><a href="#前置工作" class="header-anchor">#</a> 前置工作</h2> <p>你需要安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。如果你是 macOS 用户，还可以使用 <code>brew install node</code>。</p> <p>其次你需要安装 <a href="https://classic.yarnpkg.com/en/" target="_blank" rel="noopener noreferrer">yarn<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，这是一个 Node.js 的依赖管理器。</p> <ul><li>Windows安装可以访问<a href="https://classic.yarnpkg.com/en/docs/install#windows-stable" target="_blank" rel="noopener noreferrer">网站<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，下载 <code>.msi</code> 格式安装包。</li> <li>macOS 和 Linux 用户请使用脚本安装：<code>curl -o- -L https://yarnpkg.com/install.sh | bash</code></li> <li>以上二者都安装结束之后，在项目根目录里请用控制台输入 <code>yarn</code>，用于安装依赖。禁用 <code>npm</code> 安装依赖，因为本仓库用 <code>yarn.lock</code> 来对依赖进行了锁版本的操作。</li></ul> <h2 id="分支与提交相关"><a href="#分支与提交相关" class="header-anchor">#</a> 分支与提交相关</h2> <p>当你要对本仓库做贡献，你一定会 fork 它！此后的分支和提交相关的步骤可以按如下指南进行：</p> <ol><li>在本地建立自己的新分支。如果是对文档内容错误的修复，请以 <code>fix-</code> 作为分支名开头。例如 <code>fix-guide</code>。如果是文档内容更新，请以 <code>feature-</code> 作为分支名开头。例如 <code>feature-en-lang</code>。</li> <li>修改后请通过 <code>yarn cz</code> 的命令来触发规范化的提交操作。对于 <code>fix-</code> 分支请选择 <code>Fix</code>而后提交修改说明。对于 <code>feature-</code> 分支请选择 <code>Feature</code> 而后提交修改说明。</li> <li>提交修改说明后会自动校验commit信息格式是否符合要求，如果不符合要求将会报错，此时需要查看报错原因，然后再重新通过 <code>yarn cz</code> 提交修改直到通过为止。</li> <li><code>git push origin [你的分支名]</code>，将该修改提交到远端。</li> <li>发起你的 Pull Request 吧！</li></ol> <h2 id="翻译相关"><a href="#翻译相关" class="header-anchor">#</a> 翻译相关</h2> <p>如果你想为 PicGo-Core-Doc 新增一种语言的翻译，请按如下的步骤来操作：</p> <ol><li>在 <code>docs/</code> 下建立对应语言简称的文件夹，如 <code>docs/en</code>。</li> <li>按照 <code>docs/zh</code> 目录下的文件结构在 <code>docs/xx</code> 下做一份拷贝。</li> <li>然后就可以开始进行翻译了！</li> <li>注意文档里有一些内链，你也需要对应的进行修改。例如 <code>/zh/guide/config</code> 需要对应转为 <code>/xx/guide/config</code> （<code>xx</code> 是你所翻译的语言简称的文件夹名，如 <code>en</code>）。</li> <li>更新 <code>docs/.vuepress/config.js</code> 里的 <code>themeConfig.locales</code> 一项，把文档的侧边栏和导航栏也做对应的更新。例如：</li></ol> <p>原始的配置为：</p> <div class="language-js extra-class"><pre class="language-js"><code>locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ... 省略不写</span>
+  <span class="token string">'/zh/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/zh/guide/'</span><span class="token operator">:</span> <span class="token function">getGuideSidebar</span><span class="token punctuation">(</span><span class="token string">'指南'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token string">'/zh/dev-guide/'</span><span class="token operator">:</span> <span class="token function">getDevSidebar</span><span class="token punctuation">(</span><span class="token string">'插件开发指南'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'指南'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/zh/guide/'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'插件开发指南'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/zh/dev-guide/'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'插件开发'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/zh/dev-guide/cli.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'GUI插件开发'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/zh/dev-guide/gui.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'插件测试与发布'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/zh/dev-guide/deploy.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'API列表'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/zh/api/'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>增加你所翻译的文档的侧边栏的顶部导航栏对应的文本与翻译：</p> <div class="language-js extra-class"><pre class="language-js"><code>locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ... 省略不写</span>
+  <span class="token string">'/zh/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ... 省略不写</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">'/en/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/en/guide/'</span><span class="token operator">:</span> <span class="token function">getGuideSidebar</span><span class="token punctuation">(</span><span class="token string">'Guidelines'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token string">'/en/dev-guide/'</span><span class="token operator">:</span> <span class="token function">getDevSidebar</span><span class="token punctuation">(</span><span class="token string">'Plugin Development Guidelines'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'Guidelines'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/en/guide/'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'Plugin Development Guidelines'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/en/dev-guide/'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'Plugin Development'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/en/dev-guide/cli.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'GUI Plugin Development'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/en/dev-guide/gui.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">'Plugin Test &amp; Deploy'</span><span class="token punctuation">,</span>
+            link<span class="token operator">:</span> <span class="token string">'/en/dev-guide/deploy.html'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'API List'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/en/api/'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>对所有涉及到的 markdown 文件都翻译结束之后，你就可以按照上一节的提交相关的内容来进行提交了。</p> <p>如果你想更进一步在本地查看翻译效果，可以按照如下步骤进行：</p> <ol><li>在根目录下运行 <code>yarn dev</code> 来开启文档本地开发模式构建，然后你可以在 <code>http://localhost:8080/PicGo-Core-Doc/</code> 里看到首页。</li> <li>本文以翻译的文件夹为 <code>docs/en</code> 为例，你可以在 <code>http://localhost:8080/PicGo-Core-Doc/en/</code> 看到你翻译的文档的首页，以及 <code>http://localhost:8080/PicGo-Core-Doc/en/guide</code> 等页面来查看你翻译的文档的具体效果。</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.75368c75.js" defer></script><script src="/assets/js/2.d9775bb3.js" defer></script><script src="/assets/js/7.029c8c53.js" defer></script>
+  </body>
+</html>
